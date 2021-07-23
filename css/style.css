@@ -1,0 +1,44 @@
+/* common */
+.btn-check:focus+.btn, .btn:focus {
+    box-shadow: none;
+}
+.btn-check:active+.btn-secondary:focus, .btn-check:checked+.btn-secondary:focus, .btn-secondary.active:focus, .btn-secondary:active:focus, .show>.btn-secondary.dropdown-toggle:focus {
+    box-shadow: none;
+}
+/* typo */
+body {
+    font-family: Arial, sans-serif;
+}
+/* header */
+header {
+    width: 100%;
+}
+/* header top */
+.header_top {
+    background-color: #000;
+    padding: 12px;
+}
+.header_top img {
+    height: 15px;
+}
+/* header bottom */
+.header_bottom {
+    width: 100%;
+}
+.lens {
+    height: 25px;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #000;
+    font-size: 17px;
+}
+.header_bottom .dropdown-toggle::after {
+	content: url('../img/chevron-down-solid.svg');
+	border: none;
+	display: inline-block;
+    width: 10px;
+    vertical-align: middle;
+}
+.btn-secondary {
+    background-color: #363636;
+}
