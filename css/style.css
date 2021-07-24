@@ -1,4 +1,7 @@
 /* common */
+.btn-secondary {
+    border: none;
+}
 .btn-check:focus+.btn, .btn:focus {
     box-shadow: none;
 }
@@ -11,7 +14,7 @@ body {
 }
 /* header */
 header {
-    width: 100%;
+    z-index: 10;
 }
 /* header top */
 .header_top {
@@ -22,9 +25,6 @@ header {
     height: 15px;
 }
 /* header bottom */
-.header_bottom {
-    width: 100%;
-}
 .lens {
     height: 25px;
 }
@@ -39,6 +39,85 @@ header {
     width: 10px;
     vertical-align: middle;
 }
-.btn-secondary {
+.header_bottom .btn-secondary {
     background-color: #363636;
+}
+
+/* main */
+main {
+    padding-top: 115px;
+}
+/* hero */
+/* hero top */
+.hero_top {
+    height: 590px;
+    background-image: url(../img/jumbo-bg.png);
+    background-size: cover;
+    background-position: bottom center;
+}
+.hero_top img {
+    height: 40px;
+}
+.hero_top .btn-secondary, .new_games_top .btn-secondary {
+    background-color: #cd3d0f;
+}
+/* hero bottom */
+.hero_thumb {
+	margin-top: 24px;
+	padding: 3px;
+	border-radius: 20px;
+}
+.hero_thumb img {
+    border-radius: 20px;
+}
+.hero_thumb_active {
+	box-shadow: 0px 0px 0px 2px #0072ce;
+}
+
+/* ps5 */
+.ps5 {
+    padding: 100px 0 35px;
+}
+.slogan {
+    color: #0072ce;
+}
+.ps5 .btn-secondary {
+    background-color: #2d64e6;
+}
+.ps5_item {
+    text-align: center;
+}
+.ps5_item > div {
+    height: 100%;
+}
+.ps5_item img {
+    width: 100%;
+}
+.ps5_item .caption {
+    display: none;
+}
+.ps5_item_active {
+    border-bottom: 2px solid #0072ce;
+}
+/* new games */
+/* new games top */
+.new_games_top {
+    height: 600px;
+    background-image: url(../img/it-takes-two-hero-banner-desktop.jpg);
+    background-position: 50% 35%;
+}
+.new_games_top img {
+    height: 200px;
+}
+/* new games bottom */
+.new_games_bottom {
+    background-color: #1f1f1f;
+}
+.ng_thumb img {
+    width: 100%;
+    border-radius: 20px;
+}
+.ng_item .caption {
+    font-size: 15px;
+    margin-top: 15px;
 }

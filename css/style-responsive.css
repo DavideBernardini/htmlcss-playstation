@@ -1,0 +1,57 @@
+/* sm */
+@media screen and (min-width: 576px) {
+    /* new games */
+    .new_games_top {
+        height: 615px;
+    }
+    .new_games_top img {
+    height: 215px;
+}
+}
+/* md */
+@media screen and (min-width: 768px) {
+    /* hero */
+    .hero_top img {
+        height: 55px;
+    }
+    /* ps5 */
+    .ps5_item img {
+        width: 50%;
+        margin-bottom: 18px;
+    }
+    .ps5_item .caption {
+        display: block;
+        padding-bottom: 8px
+    }
+    /* new games */
+    .new_games_top {
+        height: 660px;
+    }
+    .new_games_top img {
+    height: 290px;
+}
+}
+
+/* lg */
+@media screen and (min-width: 992px) {
+    /* hero */
+    .hero_top img {
+        height: 30px;
+    }
+    /* new games */
+    .new_games_top {
+        height: 620px;
+    }
+    .new_games_top img {
+    height: 150px;
+}
+}
+
+/* xxxl */
+@media screen and (min-width: 1550px) {
+    /* hero */
+    .hero_top {
+        background-position: initial;
+    }
+    
+}
