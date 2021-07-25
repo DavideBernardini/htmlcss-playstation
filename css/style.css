@@ -8,6 +8,9 @@
 .btn-check:active+.btn-secondary:focus, .btn-check:checked+.btn-secondary:focus, .btn-secondary.active:focus, .btn-secondary:active:focus, .show>.btn-secondary.dropdown-toggle:focus {
     box-shadow: none;
 }
+.c_pointer {
+    cursor: pointer;
+}
 /* typo */
 body {
     font-family: Arial, sans-serif;
@@ -125,6 +128,40 @@ main {
 .ps4 {
     padding: 100px 0 110px;
 }
-.ps4 img {
+.ps4 img, .sale img {
     width: 100%;
+}
+/* ps plus, ps now */
+.ps_plus, .ps_now {
+    height: 305px;
+    background-color: #bebcbb;
+}
+.ps_now {
+    background-color: #161c3b;
+}
+.psp_logo, .psn_logo {
+    height: 50px;
+}
+.ps_plus p, .ps_now p {
+    font-size: 15px;
+}
+.ps_plus .btn-secondary {
+    background-color: #d9dadc;
+    color: #2d64e6;
+}
+.ps_now .btn-secondary {
+    background-color: #f5f5f5;
+}
+/* sale */
+.sale, .social {
+    padding: 85px 0 80px;
+}
+/* social */
+.social img {
+    width: 100%;
+    margin-top: 50px;
+}
+.wrapper_sm {
+    width: 540px;
+    margin: auto;
 }

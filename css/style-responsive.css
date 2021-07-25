@@ -5,8 +5,12 @@
         height: 615px;
     }
     .new_games_top img {
-    height: 215px;
-}
+        height: 215px;
+    }
+    /* ps plus */
+    .ps_plus, .ps_now {
+        height: 310px;
+    }
 }
 /* md */
 @media screen and (min-width: 768px) {
@@ -28,8 +32,12 @@
         height: 660px;
     }
     .new_games_top img {
-    height: 290px;
-}
+        height: 290px;
+    }
+    /* ps plus */
+    .ps_plus, .ps_now {
+        height: 250px;
+    }
 }
 
 /* lg */
@@ -43,10 +51,20 @@
         height: 620px;
     }
     .new_games_top img {
-    height: 150px;
+        height: 150px;
+    }
+    /* ps plus */
+    .ps_plus, .ps_now {
+        height: 350px;
+    }
 }
+/* xl */
+@media screen and (min-width: 1200px) {
+    /* ps plus, ps now */
+    .ps_plus, .ps_now {
+        height: 400px;
+    }
 }
-
 /* xxxl */
 @media screen and (min-width: 1550px) {
     /* hero */
