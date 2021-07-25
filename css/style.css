@@ -1,6 +1,6 @@
 /* common */
-.btn-secondary {
-    border: none;
+.btn {
+    padding: 4px 10px;
 }
 .btn-check:focus+.btn, .btn:focus {
     box-shadow: none;
@@ -45,6 +45,11 @@ header {
 }
 .header_bottom .btn-secondary {
     background-color: #363636;
+    border: 2px solid #363636;
+    box-shadow: 0 0 0 2px #363636;
+}
+.btn-secondary:hover {
+    border-color: #fff;
 }
 
 /* main */
@@ -64,12 +69,21 @@ main {
 }
 .hero_top .btn-secondary, .new_games_top .btn-secondary {
     background-color: #cd3d0f;
+    border: 2px solid #cd3d0f;
+    box-shadow: 0 0 0 2px #cd3d0f;
+}
+.hero_top .btn-secondary:hover, .new_games_top .btn-secondary:hover {
+    border-color: #000;
 }
 /* hero bottom */
 .hero_thumb {
 	margin-top: 24px;
 	padding: 3px;
 	border-radius: 20px;
+    transition: transform 0.5s;
+}
+.hero_thumb:hover {
+    transform: translateY(-10px);
 }
 .hero_thumb img {
     border-radius: 20px;
@@ -88,16 +102,28 @@ main {
 }
 .ps5 .btn-secondary, .ps4 .btn-secondary {
     background-color: #2d64e6;
+    border: 2px solid #2d64e6;
+    box-shadow: 0 0 0 2px #2d64e6;
+}
+.ps5 .btn-secondary:hover, .ps4 .btn-secondary:hover {
+    border-color: #fff;
 }
 .ps5_item {
     text-align: center;
+    cursor: pointer;
+}
+.ps5_item:not(:first-child) {
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+.ps5_item:hover {
+    opacity: 1;
 }
 .ps5_item > div {
     height: 100%;
 }
 .ps5_item img {
     width: 100%;
-    cursor: pointer;
 }
 .ps5_item .caption {
     display: none;
@@ -152,9 +178,19 @@ main {
 .ps_plus .btn-secondary {
     background-color: #d9dadc;
     color: #2d64e6;
+    border: 2px solid #d9dadc;
+    box-shadow: 0 0 0 2px #d9dadc;
+}
+.ps_plus .btn-secondary:hover {
+    box-shadow: 0 0 3px 2px #d9dadc;
 }
 .ps_now .btn-secondary {
     background-color: #f5f5f5;
+    border: 2px solid #f5f5f5;
+    box-shadow: 0 0 0 2px #f5f5f5;
+}
+.ps_now .btn-secondary:hover {
+    border-color: #000;
 }
 /* sale */
 .sale, .social {
