@@ -81,7 +81,7 @@ main {
 .slogan {
     color: #0072ce;
 }
-.ps5 .btn-secondary {
+.ps5 .btn-secondary, .ps4 .btn-secondary {
     background-color: #2d64e6;
 }
 .ps5_item {
@@ -120,4 +120,11 @@ main {
 .ng_item .caption {
     font-size: 15px;
     margin-top: 15px;
+}
+/* ps4 */
+.ps4 {
+    padding: 100px 0 110px;
+}
+.ps4 img {
+    width: 100%;
 }
