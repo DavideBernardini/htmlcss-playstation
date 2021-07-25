@@ -11,6 +11,10 @@
     .ps_plus, .ps_now {
         height: 310px;
     }
+    .wrapper_sm {
+        width: 540px;
+        margin: auto;
+    }
 }
 /* md */
 @media screen and (min-width: 768px) {
