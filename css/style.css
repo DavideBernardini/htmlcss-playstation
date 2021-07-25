@@ -1,6 +1,7 @@
 /* common */
 .btn {
     padding: 4px 10px;
+    font-weight: 500;
 }
 .btn-check:focus+.btn, .btn:focus {
     box-shadow: none;
@@ -13,11 +14,12 @@
 }
 /* typo */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 /* header */
 header {
     z-index: 10;
+    font-weight: 500;
 }
 /* header top */
 .header_top {
@@ -127,6 +129,7 @@ main {
 }
 .ps5_item .caption {
     display: none;
+    font-weight: 500;
 }
 .ps5_item_active {
     border-bottom: 2px solid #0072ce;
@@ -153,6 +156,7 @@ main {
 .ng_item .caption {
     font-size: 15px;
     margin-top: 15px;
+    font-weight: 500;
 }
 /* ps4 */
 .ps4 {
