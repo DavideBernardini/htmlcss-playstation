@@ -82,16 +82,19 @@ main {
 	margin-top: 24px;
 	padding: 3px;
 	border-radius: 20px;
-    transition: transform 0.5s;
 }
-.hero_thumb:hover {
+.hero_thumb a {
+    display: inline-block;
+}
+.hero_thumb img:hover {
     transform: translateY(-10px);
 }
 .hero_thumb img {
     border-radius: 20px;
-    cursor: pointer;
+    transition: transform 0.5s;
+    padding: 3px;
 }
-.hero_thumb_active {
+.hero_thumb_active img {
 	box-shadow: 0px 0px 0px 2px #0072ce;
 }
 
@@ -112,7 +115,10 @@ main {
 }
 .ps5_item {
     text-align: center;
-    cursor: pointer;
+}
+.ps5_item a {
+    color: #000;
+    text-decoration: none;
 }
 .ps5_item:not(:first-child) {
     opacity: 0.7;
@@ -148,12 +154,18 @@ main {
 .new_games_bottom {
     background-color: #1f1f1f;
 }
+.ng_thumb {
+    text-decoration: none;
+    color: #fff;
+}
+.ng_thumb:hover {
+    color: #fff;
+}
 .ng_thumb img {
     width: 100%;
     border-radius: 20px;
-    cursor: pointer;
 }
-.ng_item .caption {
+.ng_thumb .caption {
     font-size: 15px;
     margin-top: 15px;
     font-weight: 500;
