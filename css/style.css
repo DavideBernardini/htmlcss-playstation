@@ -87,7 +87,7 @@ header {
     text-align: center;
 }
 .dropdown-menu[data-bs-popper] {
-    top: 96%;
+    top: 97%;
 }
 .dropdown-menu ul:first-child::after {
     content: "";
