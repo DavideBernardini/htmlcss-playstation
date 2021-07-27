@@ -6,11 +6,11 @@
 .btn-check:focus+.btn, .btn:focus {
     box-shadow: none;
 }
-.btn-check:active+.btn-secondary:focus, .btn-check:checked+.btn-secondary:focus, .btn-secondary.active:focus, .btn-secondary:active:focus, .show>.btn-secondary.dropdown-toggle:focus {
-    box-shadow: none;
+.btn_custom {
+    color: #fff;
 }
-.c_pointer {
-    cursor: pointer;
+.btn_custom:hover {
+    color: #fff;
 }
 /* typo */
 body {
@@ -44,14 +44,74 @@ header {
 	display: inline-block;
     width: 10px;
     vertical-align: middle;
+    transition: transform 0.2s;
 }
-.header_bottom .btn-secondary {
+.header_bottom .dropdown-toggle:hover::after {
+    content: url('../img/chevron-down-solid-hover.svg');
+}
+.header_bottom .dropdown-toggle:focus::after {
+    content: url('../img/chevron-down-solid-hover.svg');
+    transform: rotate(180deg);
+}
+.header_bottom .btn_custom {
     background-color: #363636;
     border: 2px solid #363636;
     box-shadow: 0 0 0 2px #363636;
 }
-.btn-secondary:hover {
+.header_bottom .btn_custom:hover {
     border-color: #fff;
+}
+/* dropdown menu */
+.dropdown-menu li {
+    display: inline-block;
+}
+.dropdown-item {
+    padding: 0;
+}
+.dropdown-item:focus, .dropdown-item:hover {
+    background-color: #fff;
+    border: none;
+    box-shadow: none;
+}
+.dropdown, .dropend, .dropstart, .dropup {
+    position: static;
+}
+.dropdown-menu {
+    width: 100%;
+    flex-wrap: wrap;
+}
+.dropdown-menu.show {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+.dropdown-menu[data-bs-popper] {
+    top: 96%;
+}
+.dropdown-menu ul:first-child::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: lightgray;
+    display: block;
+    margin-top: 10px;
+}
+.sub_links {
+    margin-top: 10px;
+}
+.sub_links li {
+    margin: 0 15px;
+}
+.sub_links a::before{
+    content: "";
+    height: 5px;
+    width: 5px;
+    display: inline-block;
+    background-color: #0070d1;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 5px;
 }
 
 /* main */
@@ -69,12 +129,12 @@ main {
 .hero_top img {
     height: 40px;
 }
-.hero_top .btn-secondary, .new_games_top .btn-secondary {
+.hero_top .btn_custom, .new_games_top .btn_custom {
     background-color: #cd3d0f;
     border: 2px solid #cd3d0f;
     box-shadow: 0 0 0 2px #cd3d0f;
 }
-.hero_top .btn-secondary:hover, .new_games_top .btn-secondary:hover {
+.hero_top .btn_custom:hover, .new_games_top .btn_custom:hover {
     border-color: #000;
 }
 /* hero bottom */
@@ -105,12 +165,12 @@ main {
 .slogan {
     color: #0072ce;
 }
-.ps5 .btn-secondary, .ps4 .btn-secondary {
+.ps5 .btn_custom, .ps4 .btn_custom {
     background-color: #2d64e6;
     border: 2px solid #2d64e6;
     box-shadow: 0 0 0 2px #2d64e6;
 }
-.ps5 .btn-secondary:hover, .ps4 .btn-secondary:hover {
+.ps5 .btn_custom:hover, .ps4 .btn_custom:hover {
     border-color: #fff;
 }
 .ps5_item {
@@ -191,21 +251,21 @@ main {
 .ps_plus p, .ps_now p {
     font-size: 15px;
 }
-.ps_plus .btn-secondary {
+.ps_plus .btn_custom {
     background-color: #d9dadc;
     color: #2d64e6;
     border: 2px solid #d9dadc;
     box-shadow: 0 0 0 2px #d9dadc;
 }
-.ps_plus .btn-secondary:hover {
+.ps_plus .btn_custom:hover {
     box-shadow: 0 0 3px 2px #d9dadc;
 }
-.ps_now .btn-secondary {
+.ps_now .btn_custom {
     background-color: #f5f5f5;
     border: 2px solid #f5f5f5;
     box-shadow: 0 0 0 2px #f5f5f5;
 }
-.ps_now .btn-secondary:hover {
+.ps_now .btn_custom:hover {
     border-color: #000;
 }
 /* sale */
